@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>airline project</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		header{
+			height: 150px;
+			width: 100%;
+			display: flex;
+			background-color: black;
+		}
+		img{
+			margin-top: 25px;
+			margin-left: 60px;
+			height: 100px;
+			width: 40%;
+		}
+		.nav{
+			height: 100px;
+			width: 50%;
+		
+		
+		}
+		
+		.icon i{
+
+			margin-left: 150px;
+			padding: 2px;
+			margin-top: 15px;
+			color: white;
+            
+            }
+            .menu{
+                display: flex;
+            	list-style: none;
+          }
+            .menu li{
+            	padding: 15px;
+            	margin-top: 15px;
+            	color: white;
+            	letter-spacing: 2px;
+
+            }
+             ul:hover li{
+                      color: blue;
+                      
+
+            }
+            .gallery{
+            	height: 500px;
+            	width: 100%;
+                 }
+             .gallery img{
+             	
+            	height: 500px;
+            	width: 100%;
+            	margin-top: 0px;
+            	margin-left: 0px;
+
+            }
+            .contant{
+            	height: 1200px;
+            	width: 100%;
+            
+            	display:flex ;}
+           .form{
+           	height: 1100px;
+           	width: 30%;
+           	
+           	margin-top: 50px;
+           	margin-left: 100px;
+           	background-color:grey;
+           	float: left;	
+
+          
+           }
+           .form h3{
+           	text-align: justify;
+            color: beige;
+           	margin-top: 30px;
+           	margin-right: 5px;
+           	margin-left: 65px;
+           }
+           h1{           	 	text-align: center;
+           }
+           .selection{
+                       display: flex;
+                       justify-content: space-around;
+                       cursor: pointer;
+                       color: black;
+
+           }
+           .a{
+           	font-size: 20px;
+           
+
+           }
+           .b{
+           	font-size: 20px;
+           
+
+           }
+           h3{
+           	 color: grey;
+           	 margin-right: 140px;
+            } 
+            .lf{
+            	margin-left: 70px;
+            	border-radius: 3px;
+            	border: 3px white;
+            	height: 40px;
+            	width: 50%;
+            	font-size: 16px;
+
+            }  
+            .go{
+           	 color: grey;
+           	 margin-right: 180px;
+            } 
+            .gt{
+            	margin-left: 70px;
+            	border-radius: 3px;
+            	border: 3px white;
+            	height: 40px;
+            	width: 50%;
+            		font-size: 16px;
+            } 
+             .date{
+           	 color: grey;
+           	 margin-right: 60px;
+            } 
+            .time{
+            	margin-left: 70px;
+            	border-radius: 4px;
+            	border: 3px white;
+            	height: 40px;
+            	width: 50%;
+            		font-size: 16px;
+            		color: grey;
+            }          	        	         	        	
+              .pass{
+           	 color: grey;
+           	 margin-right: 160px;
+            } 
+            .ps{
+            	margin-left: 70px;
+            	border-radius: 4px;
+            	border: 3px white;
+            	height: 40px;
+            	width: 50%;
+            		font-size: 16px;
+            		color: grey;
+            }  
+            .GO{
+            	height: 40px;
+            	width: 12%;
+            	background-color: #0dcaf0;
+            	border-color: #0dcaf0;
+            	border-radius: 5px;
+            	margin-left: 20px;
+            }        	        	
+           .des{
+           	   margin-top: 40px;
+
+           }
+           .des h1{
+           	font-style: italic;
+           }
+           .pera{
+           		margin-top: 5px;
+              font-size: 18px;  
+           	margin-left: 70px;
+           	margin-right: 15px;
+           	word-spacing: 3px;
+           	color:#212529;
+           }
+           .pera strong{
+           	font-weight: bolder;
+           	color: black;
+           
+           }
+           .des button{
+           	height: 40px;
+           	width: 40%;
+           	margin-left: 70px;
+           	color: #000;
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+        cursor: pointer;
+        border-radius: 5px;
+        float: right;
+        margin-right: 10px;
+           }
+           .para1{
+           	float: right;
+              width: 40%; 
+              margin-top: 50px;
+              margin-left: 60px;
+            }
+            .sales h1{
+            	    font-style: italic;
+                  color: #212529;
+                  margin-right: 260px;
+            }
+            .sales p{
+            	color: #0dcaf0!important;
+            	font-size: 19px;
+            }	
+            .craft i{
+            	font-size: 23px;
+            	color: black;
+            	font-weight: bolder;
+            	margin-bottom: 5px;
+            	padding: 5px;
+            }
+            .craft button{
+            	background-color: black;
+            	color: white;
+            	border-radius: 5px;
+            	height:40px;
+            	width: 120px;
+            	float: right;
+            }
+            .craft p{
+            	font-size: 18px;
+            	letter-spacing: 0.5px;
+
+            }
+            .manage i{
+            	font-size: 23px;
+            	color: black;
+            	font-weight: bolder;
+            	margin-bottom: 5px;
+            	padding: 5px;
+            }
+            .manage button{
+            	background-color: black;
+            	color: white;
+            	border-radius: 5px;
+            	height:40px;
+            	width: 120px;
+            	float: right;
+            }
+            .manage p{
+            	font-size: 18px;
+            	letter-spacing: 0.5px;
+
+            }
+            #main{
+            	background-color: lightblue;
+            	border: 3px solid skyblue;
+            	padding: 3px;
+            	margin: 5px;
+
+            }
+            .z{display: flex;
+            	color: blue;
+            	font-size:19px ;
+
+            }
+              .y{
+              	margin-left: 65px;
+              }
+               .z button{
+               	margin-top: 150px;
+
+               }
+      
+               .footer{
+               	height:150px; 
+               	width: 100%;
+               	
+               	background-color: black;
+               	color: white;
+               	display: flex;
+               	justify-content: space-around;
+               	line-height: 150px;
+               }
+               
+            
+                  
+    
+
+           
+       
+
+
+		
+	</style>
+</head>
+<body>
+
+	<header>
+		<img src="file:///C:/Users/Pixel/AppData/Local/Temp/Rar$EXa1812.31099/airline%20project/images/logo.png">
+     <div class="nav">
+    <div class="icon">
+     <i class="fa fa-home"></i>
+     <i class="fa fa-envelope"></i>
+     <i class="fa fa-align-justify"></i>
+ 
+       
+       <ul class="menu">
+       	<li>HOME</li>
+      	<li>OUR AIRCRAFT</li>
+       	<li>SAFETY</li>
+        <li>CHARTERS</li>
+       	<li>CONTACT</li>
+       </ul>
+   </div>
+</div>
+</header>
+<div class="gallery">
+
+	<img src="images\1.jpg">
+
+
+
+	
+
+</div>
+<div class="contant">
+<div class="form">
+	<form>
+		<h3>ORDER ONLINE TICKETS <i class='fa fa-arrow-right'></i></h3>
+		<br><br>
+		<h1>Your Flight Planner</h1>
+		<br>
+		<div class="selection">
+		<div class="a">
+		<input type="radio" name=""> Round Trip
+		<br>
+
+		<input type="radio" name=""> One way
+	</div>
+		<div class="b">
+	
+		<input type="radio" name=""> Empty-Leg
+		<br>
+		<input type="radio" name=""> Multi-Leg
+    </div>
+  </div>
+<br>
+
+ <h3> Leaving Form:</h3>
+
+<input type="text" class="lf" placeholder="Enter City or Airport Code"  >
+  
+  
+
+
+  <h3 class="go"> Going To:</h3>
+
+  
+  <input type="text" class="gt" placeholder="Enter City or Airport Code"  >
+
+<h3 class="date"> Departure Date and Time:</h3>
+  
+  <input type="date" class="time" placeholder="mm/dd/yyyy"  >
+   <input type="time" class="time" placeholder=""  >
+  <h3 class="date"> Departure Date and Time:</h3>
+
+  
+  <input type="date" class="time" placeholder="mm/dd/yyyy"  >
+   <input type="time" class="time" placeholder=""  >
+   <h3 class="pass">Passenger(s)</h3>
+   <input type="text" class="ps" placeholder="#passengers"  >
+   <button class="GO">GO!</button>
+
+   <div class="des">
+   <h1>Did You Know?</h1>
+<p class="pera">
+   <strong>Lorem, ipsum dolor.</strong> it amet consectetur adipisicing elit. Culpa, blanditiis minus ea mollitia fuga temporibus laboriosam rem earum sed itaque porro aliquid ratione deleniti, voluptatibus esse quod debitis nulla nisi.</P>
+   <button>READ MORE</button>
+   
+ </div>
+</div></p>
+</form>
+<div class="para1">
+	<div class="sales">
+<h1>AIRCRAFT SALES</h1>
+<p>Aliquefauctorac nulla ant vestibulumris sed tincidunt pede ut faucibus. Nec pellus yel orcl pede justo eroselit eget tellus ero nunc.Aliquefauctorac nulla ant vestibulumris sed tincidunt pede ut faucibus. Nec pellus yel orcl pede justo eroselit eget tellus ero nunc. Hendnibn pretium nec lorem tor tempus vel nibh uma que morbi.<br><br>
+
+Mearchendiceallu tempus arcu adipis duis partur convallis sed eget et inte. Fauctormas sa ligula por man velit et curabitudin dolar id.</p>
+</div>
+<br><br>
+<div class="craft">
+<i class="fa fa-circle"<h3>   Aircraft</h3></i>
+<p>. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+</p>
+<button>READ MORE</button></div>
+<br><br>
+
+
+
+<div class="manage">
+<i class="fa fa-circle"<h3>   Aircraft Management</h3></i>
+<p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+</p>
+<br>
+<button>RESERVATION</button>
+
+<button id="main">FLEET</button>
+</div>
+
+<div class="manage">
+	<br><br>
+<i class="fa fa-circle"<h3> SALES</h3></i>
+	<div class="z">
+<ul>
+		<div class="z">
+
+	<div class="x">
+<li>Lipsum quia dolor amet consectetur</li>
+<li>Vdipisic velit, sed quia non numquam</li>
+<li>Dius modi tempora incidunt</li>
+<li>Udiquam quaerat volupatate enim</li>
+</div>
+
+<div class="y">
+<li>Quis nostrum exercitationmen</li>
+<li>Quis aspernatur vel eum iurea</li>
+<li>Ullam corporis suscript labourism</li>
+<li>Nisi ut aliquid ex commodi</li>
+</div>
+</div>
+</ul>
+<br>
+<button>READ MORE</button>
+</div>	
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="footer">
+	<h4>Copyright © Domain Name - All Right Reserved</h4>
+	<h4>Free CSS Templates by Template Mosnter</h4>
+</div>
+
+	
+	
+</body>
+	
+
+</html>
